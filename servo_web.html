@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ServoWeb</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img id=pic src="images/background.jpg">
+    <h1>
+        <p id="head"> WELCOME TO THE SERVO CONTROL APP </p>
+    </h1>
+    <marquee scrollamount="15" loop="-1">
+        <p id="mark">THIS IS THE SERVO MOTOR CONTROL WEB APP WHICH CONTROL THE SERVO MOTOR FROM ANY WHERE
+        </p>
+    </marquee>
+
+    <form id="contactForm">
+        <p id="par1">X-AXIS-VALUE</p>
+        <input type="range" min="0" max="50.5" value="0" name="slider" id="slider" />
+        <p id="rangeslider"> Y-AXIS-VALUE =<span id="demo1"></span></p>
+        <p id="par2">Y-AXIS-VALUE</p>
+        <input type="range" min="0" max="50.5" value="0" name="slider" id="slider1" />
+        <p id="rangeslider"> Y-AXIS-VALUE =<span id="demo"></span></p>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./mail.js"></script>
+
+</body>
+
+</html>
